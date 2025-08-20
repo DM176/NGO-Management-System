@@ -1,0 +1,86 @@
+# NGO Management System Configuration Template
+# Copy this file to config.properties and update with your values
+
+# =============================================================================
+# DATABASE CONFIGURATION
+# =============================================================================
+ngo.db.url=jdbc:mysql://localhost:3306/ngo_management
+ngo.db.username=your_username
+ngo.db.password=your_password
+ngo.db.driver=com.mysql.cj.jdbc.Driver
+ngo.db.poolSize=10
+ngo.db.connectionTimeout=30000
+
+# =============================================================================
+# APPLICATION CONFIGURATION
+# =============================================================================
+ngo.app.name=NGO Management System
+ngo.app.version=2.0.0
+ngo.app.debug=false
+ngo.app.environment=production
+
+# =============================================================================
+# UI CONFIGURATION
+# =============================================================================
+ngo.ui.theme=system
+ngo.ui.language=en
+ngo.ui.timezone=UTC
+ngo.ui.windowWidth=1200
+ngo.ui.windowHeight=800
+
+# =============================================================================
+# LOGGING CONFIGURATION
+# =============================================================================
+ngo.log.level=INFO
+ngo.log.file=ngo_system.log
+ngo.log.maxSize=10MB
+ngo.log.maxFiles=5
+ngo.log.pattern=[%d{yyyy-MM-dd HH:mm:ss}] [%level] %logger{36} - %msg%n
+
+# =============================================================================
+# SECURITY CONFIGURATION
+# =============================================================================
+ngo.security.sessionTimeout=30
+ngo.security.maxLoginAttempts=3
+ngo.security.passwordPolicy=strong
+ngo.security.encryptionEnabled=true
+
+# =============================================================================
+# FEATURE FLAGS
+# =============================================================================
+ngo.features.advancedReporting=true
+ngo.features.documentManagement=true
+ngo.features.communicationTools=true
+ngo.features.financialTracking=true
+ngo.features.auditLogging=true
+
+# =============================================================================
+# PERFORMANCE CONFIGURATION
+# =============================================================================
+ngo.performance.cacheEnabled=true
+ngo.performance.cacheSize=1000
+ngo.performance.asyncOperations=true
+ngo.performance.batchSize=100
+
+# =============================================================================
+# NOTIFICATION CONFIGURATION
+# =============================================================================
+ngo.notifications.emailEnabled=false
+ngo.notifications.smsEnabled=false
+ngo.notifications.pushEnabled=false
+ngo.notifications.defaultLanguage=en
+
+# =============================================================================
+# BACKUP CONFIGURATION
+# =============================================================================
+ngo.backup.enabled=true
+ngo.backup.frequency=daily
+ngo.backup.retentionDays=30
+ngo.backup.location=./backups/
+
+# =============================================================================
+# INTEGRATION CONFIGURATION
+# =============================================================================
+ngo.integration.externalAPIs=false
+ngo.integration.thirdPartyServices=false
+ngo.integration.webhookEnabled=false 
